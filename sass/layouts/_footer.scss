@@ -32,18 +32,19 @@ footer .logo {
     transition: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
 }
 
 .footer-contact-link {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-address-link:hover,
-.footer-address-link:focus,
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-    color: var(--accent-color);
-}
+
 
 /* ---------------FOOTER join and subscribe*/
 .footer-items {

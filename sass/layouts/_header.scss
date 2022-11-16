@@ -39,25 +39,29 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        position: relative;
+    }
 }
 
-.nav-link:hover,
-.nav-link:focus,
 .current {
     color: var(--accent-color);
     position: relative;
-}
 
-.current::after {
-    content: "";
-    display: flex;
-    width: 100%;
-    height: 4px;
-    background-color: currentColor;
-    border-radius: 2px;
+    &::after {
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 4px;
+        background-color: currentColor;
+        border-radius: 2px;
 
-    position: absolute;
-    top: 46px;
+        position: absolute;
+        top: 46px;
+    }
 }
 
 /* ---------------HEADER contacts */
@@ -67,7 +71,6 @@
     gap: 30px;
     /* outline: 1px solid tomato; */
 }
-
 
 .header-contact {
     text-decoration: none;
@@ -83,11 +86,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-contact:hover,
-.header-contact:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header-contact-icon {
@@ -96,20 +99,23 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header-contact:hover &,
+    .header-contact:focus & {
+        fill: var(--accent-color);
+    }
 }
 
-.header-contact:hover .header-contact-icon,
-.header-contact:focus .header-contact-icon {
-    fill: var(--accent-color);
+.header-mail {
+    &::before {
+        content: url('../images/envelope.svg');
+        margin-right: 10px;
+    }
 }
 
-.header-mail::before {
-    content: url('../images/envelope.svg');
-
-    margin-right: 10px;
-}
-
-.header-tel::before {
-    content: url('../images/smartphone.svg');
-    margin-right: 10px;
+.header-tel {
+    &::before {
+        content: url('../images/smartphone.svg');
+        margin-right: 10px;
+    }
 }

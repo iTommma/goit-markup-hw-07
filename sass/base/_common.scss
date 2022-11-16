@@ -25,3 +25,12 @@ body {
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
 }
+
+.is-hidden {
+    visibility: hidden;
+    /* забирає можливість фокусу */
+    opacity: 0;
+    /* робить невидимим */
+    pointer-events: none;
+    /* неможливо клікнути */
+}

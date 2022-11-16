@@ -6,13 +6,11 @@
     line-height: 1.2;
     font-weight: var(--font-weight-700);
 
+    footer & {
+        color: #ffffff;
+    }
 }
 
 .logo-web {
     color: var(--accent-color);
-}
-
-/* logo footer */
-footer .logo {
-    color: #ffffff;
 }
