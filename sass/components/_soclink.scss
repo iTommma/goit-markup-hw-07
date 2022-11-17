@@ -1,17 +1,17 @@
-.team-soc-list,
+.soc,
 .footer-soc-list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.team-soc-item,
+.soc__item,
 .footer-soc-item {
     width: 44px;
     height: 44px;
 }
 
-.team-soc-link,
+.soc__link,
 .footer-soc-link {
     width: 100%;
     height: 100%;
@@ -35,15 +35,15 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.team-soc-icon {
+.soc__icon {
     fill: #AFB1B8;
 
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .team-soc-link:hover &,
-    .team-soc-link:focus & {
+    .soc__link:hover &,
+    .soc__link:focus & {
         fill: white;
     }
 }
