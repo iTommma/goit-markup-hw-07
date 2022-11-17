@@ -437,11 +437,11 @@ footer .logo {
   width: 270px;
 }
 
-.section__specialization {
+.section--top {
   padding-top: 0;
 }
 
-.section-title__specialization {
+.section-title--bottom {
   margin-bottom: 50px;
 }
 
