@@ -81,6 +81,14 @@ body {
   padding-bottom: 94px;
 }
 
+.section--top {
+  padding-top: 0;
+}
+
+.section--gray {
+  background-color: #F5F4FA;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -107,6 +115,10 @@ body {
   font-weight: var(--font-weight-700);
   text-align: center;
   color: var(--title-text-color);
+}
+
+.section-title--bottom {
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -437,14 +449,6 @@ footer .logo {
   width: 270px;
 }
 
-.section--top {
-  padding-top: 0;
-}
-
-.section-title--bottom {
-  margin-bottom: 50px;
-}
-
 .pictures-list {
   display: flex;
   justify-content: space-between;
@@ -467,13 +471,6 @@ footer .logo {
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 27px;
-}
-
-.team {
-  background-color: #F5F4FA;
-}
-.team__title {
-  margin-bottom: 50px;
 }
 
 .poster {
@@ -551,10 +548,6 @@ footer .logo {
 
 .footer-soc-icon {
   fill: white;
-}
-
-.clients__title {
-  margin-bottom: 50px;
 }
 
 .icons {
